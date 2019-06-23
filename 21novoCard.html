@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<!--Link do card-->
+<a href='22confirmaCard.php'>
+<!--Borda tracejada-->
+<div class='ncard'>
+    <style>
+    .ncard{
+        /*Dimensoes*/
+        height:240px;
+        width:190px;
+        /*Posicionamento*/
+        margin:5px auto 25px auto;
+        /*Cores*/
+        background-color:transparent;
+        /*Cursor*/
+        cursor:pointer;
+        /*Borda*/
+        border-width:5px;
+        border-style:dotted;
+        border-color:grey;        
+        border-radius:18px;
+    }
+    .ncard:hover{
+        /*Cor*/
+        border-color:aliceblue;
+    }
+    /*Cor da cruz*/
+    .ncard:hover .cross{
+        background:#eee;
+    }
+    .ncard:hover .cross:after{
+        background:#eee;
+    }
+    </style>
+    <!--Sinal de mais no centro-->
+    <div class='cross'>
+        <style>
+            .cross {
+            background:#666;
+            position:relative;
+            border-radius:4px;
+            /*Tamanho*/
+            height:80px;
+            width:24px;
+            /*Posicao FINAL da cruz*/
+            top:80px;
+            left:83px;
+            }
+            .cross:after {
+            background:#666;
+            content:"";
+            height:24px;
+            left:-28px;
+            position:absolute;
+            top:28px;
+            width:80px;
+            border-radius:4px;
+            }
+        </style>
+    </div>
+</div>
+</a>
+<!--Cor do fundo-->
+<style>
+body{
+    margin:0px;
+    background-color:#282828;
+}
+</style>
+</html>
